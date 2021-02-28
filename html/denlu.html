@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/denlu.css">
+    <script src="../jquery/jquery.min.js"></script>
+    <script src="../validation/dist/jquery.validate.min.js"></script>
+    <script src="../validation/dist/localization/messages_zh.min.js"></script>
+</head>
+
+<body>
+    <div id="header">
+        <div class="header">
+            <a href="../index.html">
+                <img src="https://image.ztemall.com/bb27a3154a9d096e434aae60cd793d88.png" alt="">
+            </a>
+        </div>
+    </div>
+    <div id="main">
+        <div class="main">
+            <div class="left">
+                <img src="https://image.ztemall.com/781b9365979e431c1b0238af038acb5d.jpg" alt="">
+            </div>
+            <div class="right">
+                <div class="right-top">
+                    <ul>
+                        <li class="active">会员登录</li>
+                        <li>短信登录</li>
+                        <li style="border: 0">员工登录</li>
+                    </ul>
+                    <span>
+                        <a href="zhuce.html">免费注册></a>
+                    </span>
+                </div>
+                <div class="right-bottom">
+
+                    <form action="" class="denlu">
+
+                        <!-- 会员登录 -->
+                        <div class="active a">
+                            <p><input type="username" placeholder="会员账号" id="username" name="username"></p>
+                            <p><input type="password" placeholder="填写密码" id="password" name="password"></p>
+                            <p style="font-size:12px" class="box">
+                                <input type="text" placeholder="验证码" style="width: 140px" id="code" name="code">
+                                <img src="https://www.ztemall.com/utils/vcode.html?key=topc_signin&width=120&height=35"
+                                    alt="">
+                                看不清？
+                                <button class="btn1">换一张</button>
+                            </p>
+                        </div>
+                        <!-- 短信登录 -->
+                        <div class="a">
+                            <p><input type="username" placeholder="会员手机号"></p>
+                            <p style="font-size:12px">
+                                <input type="password" placeholder="验证码" style="width: 140px">
+                                <img src="https://www.ztemall.com/utils/vcode.html?key=topc_signin&width=120&height=35"
+                                    alt="">
+                                看不清？
+                                <button class="btn1">换一张</button>
+                            </p>
+                            <p><input type="text" placeholder="填写短信密码"></p>
+                        </div>
+                        <!-- 员工登录 -->
+                        <div class="a">
+                            <p><input type="username" placeholder="员工账号"></p>
+                            <p><input type="password" placeholder="填写登录密码"></p>
+                            <p><input type="text" placeholder="填写动态密码"></p>
+                        </div>
+
+                        <button class="btn2" >登录</button>
+                    </form>
+
+
+
+                    <div class="trust-login">
+                        <a href=""><img src="https://res.ztemall.com/app/sysuser/statics/images/login/weibo.png"
+                                alt=""></a>
+                        <a href=""><img src="https://res.ztemall.com/app/sysuser/statics/images/login/qq.png"
+                                alt=""></a>
+                        <a href=""><img src="https://res.ztemall.com/app/sysuser/statics/images/login/weixin.png"
+                                alt=""></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="footer">
+        <div class="footer">
+            <a href="">服务协议</a>&nbsp;|
+            <a href="">服务协议</a>&nbsp;|
+            ©2014 - 2020 深圳市中兴智谷科技有限公司版权所有，并保留所有权利
+        </div>
+    </div>
+    <script src="../js/cookie.js"></script>
+    <script src="../js/denlu.js"></script>
+    <script src="../js/ajax.js"></script>
+</body>
+
+</html>

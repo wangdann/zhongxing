@@ -1,0 +1,31 @@
+<?php
+
+$con = mysqli_connect('localhost','wang','123456','test');
+
+  $username = $_POST['username'];
+  $password = $_POST['password'];
+
+  $sql = "SELECT * FROM `students` WHERE `username`='$username' AND `password`='$password'";
+
+  $res = mysqli_query($con,$sql);
+
+  if (!$res) {
+    die('数据库链接错误' . mysqli_error($con));
+  }
+
+  $row = mysqli_fetch_assoc($res);
+  if (!$row) {
+    // 没有匹配的数据 登录失败
+    echo json_encode(array(
+      "code" => 0,
+      "message" => "登录失败"
+    ));
+  } else {
+    // 有匹配的数据 登录成功
+    echo json_encode(array(
+      "code" => 1,
+      "message" => "登录成功"
+    ));
+  }
+
+?>
